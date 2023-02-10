@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{app.welcome.title}">ERROR</title>
+    <link rel="icon" type="image/png" href="/welcome.png" />
+    <link th:href="@{/css/main.css}" rel="stylesheet"/>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="headerName">
+                <h1 th:text="#{app.welcome.header}">ERROR</h1>
+            </div>
+
+            <div class="searchBox" th:text="#{app.welcome.header.search}"></div>
+
+            <div class="circle1">
+                <svg height="28" width="28">
+                    <circle cx="16" cy="16" r="8" stroke="black" stroke-width="3" fill="#abff6b" />
+                </svg>
+            </div>
+
+            <div class="circle2">
+                <svg height="22" width="22">
+                    <circle cx="12" cy="12" r="6" stroke="black" stroke-width="3" fill="#abff6b" />
+                </svg>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="welcomeMenu">
+                <p>Menu</p>
+                <a th:text="#{app.welcome.title}" th:href="@{/th/welcome}" ></a>
+                <a th:text="#{app.welcome.main.infoBtn}" th:href="@{/th/info}"></a>
+                <a th:text="#{app.welcome.main.soon}" href="#"></a>
+                <a th:text="#{app.welcome.main.soon}" href="#"></a>
+            </div>
+        </main>
+
+        <footer class="footer">
+
+            <div class="country">
+                <p th:text="#{app.welcome.footer.country}">ERROR</p>
+            </div>
+            <div class="data">
+                <p th:text="${data}">ERROR</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

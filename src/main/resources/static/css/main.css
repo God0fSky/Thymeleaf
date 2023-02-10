@@ -1,0 +1,90 @@
+html,
+body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    background-color: #abff6b;
+    padding: 30px;
+}
+.main {
+    background-color: #f0ffe5;
+    height: 100%;
+    padding: 30px;
+    flex: 1 1 auto;
+}
+.footer {
+    background-color: #abff6b;
+    padding: 30px;
+}
+.country {
+    float: left;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+.data {
+    padding-left: 88.5%;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+.headerName {
+    float: left;
+}
+.searchBox {
+    border: 2px solid black;
+    height: 20px;
+    width: 150px;
+    margin-left: 87%;
+    margin-top: 25px;
+    padding: 2px 2px 2px 2px;
+}
+.circle1 {
+    margin-left: 74%;
+    position: absolute;
+    top: 60px;
+}
+.circle2 {
+    margin-left: 72%;
+    position: absolute;
+    top: 64px;
+}
+.welcomeMenu {
+    height: 345px;
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 145px; /* Stay at the top */
+    left: 8px;
+    background-color: #abff6b; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    border: 2px solid black;
+}
+.welcomeMenu p {
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+}
+.welcomeMenu a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+}
+.welcomeMenu a:hover {
+    color: blue;
+}
+.systemTime {
+    height: 75px;
+    width: 90px;
+    margin-left: 45%;
+    margin-right: 55%;
+    padding: 15px 15px 15px 15px;
+    border: 2px solid black;
+}
